@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    font-family: Geneva, Tahoma, sans-serif;    
+}
+h1{
+    color: white;
+}
+
+            /* NAV STYLING */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2vh;
+    padding: 2.5rem;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+}
+
+nav a {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.main-nav .mobile-logo img{
+    width: 6.5rem;
+}
+
+.main-nav ul {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    right: 0;
+    top: 60px;
+    height: 92vh;
+    flex-direction: column;
+    text-align: center;
+    transform:translate(100%);
+    transition: .5s ease-in-out;
+    justify-content: space-around;
+    list-style-type: none;
+
+    
+}
+ul.active {
+    transform: translate(0%);
+    z-index: 999;
+    background-color: black;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.main-nav ul li a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50vw;
+    height: 2px;
+    width: 0;
+    background: rgb(190, 190, 190);
+    transition: .3s ease-in-out;
+}
+
+.main-nav ul li a:hover::after{
+    width: 84px;
+    transition: .3s ease-in-out;
+}
+
+
+.main-nav ul li:last-child a:hover::after{
+    background: rgb(148, 148, 255);
+}
+
+.main-nav ul li:last-child a{
+    color: rgb(148, 148, 255);
+}
+
+.main-nav .burger {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-nav .burger .line {
+    width: 3em;
+    margin: 10px;
+    height: 0.3em;
+    border-radius: 20px;
+    background: white;
+    transition: .3s ease-in-out;
+}
+
+.main-nav .burger.active .line:first-child{
+    transform: rotate(-406deg) translateY(10px);
+}
+.main-nav .burger.active .line:last-child{
+    transform: rotate(406deg) translateY(-10px);
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    .main-nav ul {
+        list-style-type: none;
+        display: flex;
+        position: relative;
+        width: 55%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        top: 0;
+
+        transform: translate(0%);
+    }
+
+    .main-nav ul li a {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bold;
+
+        position: relative;
+        padding: 0.4rem;
+        
+    }
+    
+    .main-nav ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+        width: 0%;
+        background-color: white;
+        height: .15em;
+        border-radius: 10px;
+        transition: .3s ease-in-out;
+    }
+
+    .main-nav ul li:last-child a:hover::after{
+        background: rgb(148, 148, 255);
+    }
+    
+    .main-nav ul li a:hover::after{
+        width: 100%;
+    }
+
+    .main-nav ul li:last-child a{
+        color: rgb(148, 148, 255);
+    }
+
+    .burger{
+        display: none;
+    }
+}
