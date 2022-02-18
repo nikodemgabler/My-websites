@@ -31,6 +31,7 @@ body{
     font-size: 48px;   
     line-height: 40px;
     z-index: 99;
+    height: 58vh;
 }
 
 .main-section h1 strong{
@@ -39,11 +40,51 @@ body{
 }
 
 
+.main-section .arrow-up {
+    position: absolute;
+    top: -7em;
+    right: -6%;
+    width: 0; 
+    height: 0; 
+    border-left: 60vw solid transparent;
+    
+    border-bottom: 110vh solid rgb(148, 148, 255);
+  }
+  
+  .main-section .my-photo img{ 
+      display: none;
+  }
 
 
 @media screen and (min-width: 405px){
 
     .main-section .nikodem-photo{
         margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .main-section .my-photo {
+        z-index: 1;
+        width: 35%;
+        height: 80%;
+  
+        position: absolute;
+        right: -6%;
+        bottom: -2%;
+
+        object-fit: cover;
+        object-position: center center;
+        opacity: 1;
+        transition: opacity 500ms ease 0s;
+
+        text-align: center;
+        text-justify: center;
+    }
+  
+    .main-section .my-photo img{
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 }

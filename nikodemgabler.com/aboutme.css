@@ -1,0 +1,50 @@
+body{
+    height: 100%;
+}
+
+.main-section-aboutme{
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 10vh;
+}
+
+.main-section-aboutme h1 { 
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.main-section-aboutme h2 {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 3px solid white;
+    border-radius: 3px;
+}
+
+.main-section-aboutme h3 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.main-section-aboutme h4 {
+    font-size: 16px;
+}
+
+.main-section-aboutme p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.main-section-aboutme p strong {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 767px) {
+    .main-section-aboutme{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+ }
