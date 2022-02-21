@@ -1,0 +1,88 @@
+.main-section-contact {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section-contact h1 {
+    font-size: 48px;
+}
+
+ .main-section-contact .icons-container {
+    display: grid;
+    width: 50px;
+    grid-template-areas:
+    "github h2-1"
+    "linkedin h2-2"
+    "phone h2-3";
+ }
+
+ .main-section-contact .icons-container {
+   width: 300px;
+}
+
+.main-section-contact .icons-container a {
+   display: block;
+   padding-bottom: 35px;
+}
+
+.main-section-contact .icons-container h2 .scm-link {
+   color: white;
+   text-decoration: none;
+   width: 250px;
+   transition: .3s ease-in-out;
+}
+
+ .main-section-contact .icons-container a img {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-top:20px;
+    background-color: white;
+    border-radius: 100%;
+    border-color: black;
+    text-align: center;
+
+    border: 1px solid white;
+    align-self: center;
+    margin: 0;
+    margin-right: 30px;
+ }
+
+ .main-section-contact .icons-container a .github-icon {
+    grid-area: github;
+ }
+ .main-section-contact .icons-container a .linkedin-icon {
+    grid-area: linkedin;
+ }
+ .main-section-contact .icons-container a .phone-icon {
+    grid-area: phone;
+    background-color: rgb(0, 206, 27);
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    border: 1px solid white;
+ }
+
+ .main-section-contact h2{ 
+    align-self: center;
+}
+ .main-section-contact h2 .h2-1 { 
+    grid-area: h1;
+}
+.main-section-contact h2 .h2-2 { 
+    grid-area: h2;
+}
+.main-section-contact h2 .h2-3 { 
+    grid-area: h3;
+}
+
+.email-h2 {
+   font-size: 36px;
+   text-align: left;
+}
+
+.main-section-contact .icons-container h2 .scm-link:hover {
+   color: rgb(148, 148, 255);
+}

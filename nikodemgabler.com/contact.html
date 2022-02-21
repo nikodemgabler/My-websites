@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+
+    <script src="myscript.js"></script>
+    <title>Nikodem Gabler - Junior SEO Specialist</title>
+</head>
+<body>
+    
+<nav class="main-nav">
+        <a href="#" class="mobile-logo"><img src="images/logo-mobile.png" alt="zdjecie-nikodem-gabler-mobile-logo"></a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="o-mnie.html">O mnie</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+</nav>
+
+<section class="main-section-contact">
+    
+    <h1>Kontakt</h1>
+
+    <div class="icons-container">
+        <a href="#"><img src="images/linkedin-icon.svg" alt="linkedin-icon" class="linkedin-icon"/></a><h2 class="h2-2"><a href="https://www.linkedin.com/in/nikodem-gabler/" target="_blank" class="scm-link">linkedin.com/nikodem-gabler</a></h2>
+        <a href="#"><img src="images/github-icon.svg" alt="github-icon" class="github-icon"/></a> <h2 class="h2-1"><a href="https://github.com/nikodemgabler" target="_blank" class="scm-link">github.com/nikodemgabler</a></h2>
+        <a href="#"><img src="images/gmail-icon.svg" alt="gmail-icon" class="gmail-icon"/></a><h2 class="h2-3"><a href="mailto: nikodemgabler@gmail.com" class="scm-link">nikodemgabler@gmail.com</a></h2>
+        <a href="#"><img src="images/phone-icon.svg" alt="phone-icon" class="phone-icon"/></a><h2 class="h2-4"><a href="tel:669-870-208" class="scm-link">+48 669 870 208</a></h2>
+    </div>
+</section>
+    
+
+
+
+
+
+
+
+<script>
+    const mobileNav = document.querySelector('ul');
+    const burgerIcon = document.querySelector('.burger');
+
+    burgerIcon.addEventListener('click', function(){
+        mobileNav.classList.toggle('active');
+        burgerIcon.classList.toggle('active');
+    })
+</script>
+
+
+</body>
+</html>
