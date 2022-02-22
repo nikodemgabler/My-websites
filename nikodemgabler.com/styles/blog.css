@@ -10,12 +10,14 @@ body {
     font-family: Tahoma, sans-serif;
 }
 
-.main-section-blog h1{
-    font-size: 48px;
+.main-section-blog header {
     grid-area: h1;
 }
 
-.main-section-blog article{ 
+.main-section-blog header h1 {
+    font-size: 48px;
+}
+.main-section-blog article { 
     width: 100%;
     margin-top: 60px;
 }

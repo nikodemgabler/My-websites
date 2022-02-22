@@ -12,10 +12,10 @@ body {
 .blog-article-section .article-photo {
     width: 100%;
     height: 25vh;
-    background-image: url("images/dlaczego-warto-wspolpracowac-z-agencja-marketingowa.png");
+    background-image: url("../images/wspolpraca-z-agencja-marketingowa.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     border-radius: 8px;
 }
 
@@ -28,4 +28,19 @@ body {
 
 .blog-article-section h2 {
     font-size: 24px;
+}
+
+.blog-article-section ul {
+    padding: 0;
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 824px) {
+
+    .blog-article-section .article-photo {
+        margin: 5vh auto 5vh auto;
+        width: 80%;
+        height: 35vh;
+    }
+
 }

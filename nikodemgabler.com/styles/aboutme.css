@@ -1,6 +1,7 @@
 body{
     height: 100%;
     overflow: hidden;
+    font-size: 16px;
 }
 
 .main-section-aboutme{
@@ -29,10 +30,6 @@ body{
     line-height: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-}
-
-.main-section-aboutme h4 {
-    font-size: 16px;
 }
 
 .main-section-aboutme p {
